@@ -1,4 +1,4 @@
-av==6.0.0
+av==8.0.0
 click==7.1.2
 gunicorn==20.1.0
 itsdangerous==2.1.0
@@ -7,7 +7,7 @@ keras==2.8.0
 Keras-Preprocessing==1.1.2
 MarkupSafe==2.1.0
 numpy
-opencv-python-headless==3.4.10.37
+opencv-python-headless==4.0.1.24
 Pillow==9.0.1
 streamlit==1.5.0
 streamlit-webrtc
