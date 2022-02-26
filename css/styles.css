@@ -13,3 +13,12 @@ body {
 /* Removing Main Menubar and Footer */
 #MainMenu {visibility: hidden;}
 footer {visibility: hidden;}
+footer:after {
+	content:'Real Time Masked Face Recognition'; 
+	visibility: visible;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
