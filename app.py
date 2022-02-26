@@ -81,7 +81,7 @@ def local_css(file_name):
     with open(file_name) as f:
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
-# local_css('css/styles.css')
+local_css('css/styles.css')
 model1 = load_model()
 st.markdown('<h2 align="center">Real Time Masked Face Recognition</h2>', unsafe_allow_html=True)
 webrtc_streamer(key="example",
