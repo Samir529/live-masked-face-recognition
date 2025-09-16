@@ -1,7 +1,7 @@
+import streamlit as st
 import cv2
 import numpy as np
-from tensorflow.keras.models import model_from_json   
-import streamlit as st
+from tensorflow.keras.models import model_from_json
 from streamlit_webrtc import VideoProcessorBase, webrtc_streamer,  RTCConfiguration, WebRtcMode
 from PIL import Image
 import av
@@ -10,7 +10,8 @@ from typing import List, NamedTuple
 
 
 faces = ['Abdur Samad', 'Ahsan Ahmed', 'Asef', 'Ashik', 'Azizul Hakim', 'DDS', 'Mayaz', 'Meheraj', 'Nayeem Khan', 'Nayem', 'Risul Islam Fahim', 'Saif', 'Saki', 'Samir', 'Shahtab', 'Shimul Rahman Fahad', 'Shourov', 'Shuvo']
-@st.cache(allow_output_mutation=True)
+
+@st.cache_resource
 def load_model():
     model = model_from_json(open("vgg16_saved_582.json", "r").read())
     model.load_weights('vgg16_saved_582.h5')
